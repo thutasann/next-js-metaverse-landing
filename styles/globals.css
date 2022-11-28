@@ -10,6 +10,10 @@
   scroll-behavior: smooth;
 }
 
+*::selection{
+  color: #34acc7;
+}
+
 .gradient-01 {
   background-image: linear-gradient(
     270deg,
