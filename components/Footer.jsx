@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { socials } from '../constants';
-
+import Image from 'next/image';
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 
@@ -44,11 +44,16 @@ const Footer = () => (
 
           <div className="flex gap-4">
             {socials.map((social) => (
-              <img
+              <Image
+                width={24}
+                height={24}
+                loading="lazy"
+                blurDataURL={social.url}
+                quality={100}
                 key={social.name}
                 src={social.url}
                 alt={social.name}
-                className="w-[24px] h-[24px] object-contain cursor-pointer"
+                className="object-contain cursor-pointer"
               />
             ))}
           </div>
