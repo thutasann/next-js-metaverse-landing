@@ -3,9 +3,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
-import Link from 'next/link';
 
 const Navbar = () => (
   <motion.nav 
